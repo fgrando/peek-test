@@ -6,6 +6,8 @@
 int MYLIB_VERSION = 666;
 extern tuple_t MY_BASE;
 
+char MYLIB_SOMEVAR;
+
 void display(void)
 {
     void *ptr = (void*)&MYLIB_VERSION;
@@ -13,6 +15,12 @@ void display(void)
 
     ptr = (void*)&MY_BASE;
     printf("MY_BASE                 %p\n", ptr);
+}
+
+uint64_t somevar(void)
+{
+    uint64_t addr = (uint64_t)&MYLIB_SOMEVAR;
+    return addr;
 }
 
 int peek(uint64_t addr, uint32_t *output)

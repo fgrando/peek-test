@@ -4,7 +4,7 @@ Merging program properties
 
 As-needed library included to satisfy reference by file (symbol)
 
-libc.so.6                     /tmp/ccV0bF7Q.o (puts@@GLIBC_2.2.5)
+libc.so.6                     /tmp/ccdmypx1.o (puts@@GLIBC_2.2.5)
 
 Discarded input sections
 
@@ -15,13 +15,13 @@ Discarded input sections
  .note.gnu.property
                 0x0000000000000000       0x20 /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o
  .note.GNU-stack
-                0x0000000000000000        0x0 /tmp/ccgEhjZq.o
+                0x0000000000000000        0x0 /tmp/ccdmypx1.o
  .note.gnu.property
-                0x0000000000000000       0x20 /tmp/ccgEhjZq.o
+                0x0000000000000000       0x20 /tmp/ccdmypx1.o
  .note.GNU-stack
-                0x0000000000000000        0x0 /tmp/ccV0bF7Q.o
+                0x0000000000000000        0x0 /tmp/cciOujss.o
  .note.gnu.property
-                0x0000000000000000       0x20 /tmp/ccV0bF7Q.o
+                0x0000000000000000       0x20 /tmp/cciOujss.o
  .note.GNU-stack
                 0x0000000000000000        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o
  .note.gnu.property
@@ -40,8 +40,8 @@ Linker script and memory map
 
 LOAD /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o
 LOAD /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o
-LOAD /tmp/ccgEhjZq.o
-LOAD /tmp/ccV0bF7Q.o
+LOAD /tmp/ccdmypx1.o
+LOAD /tmp/cciOujss.o
 LOAD /usr/lib/gcc/x86_64-linux-gnu/11/libgcc.a
 LOAD /usr/lib/gcc/x86_64-linux-gnu/11/libgcc_s.so
 START GROUP
@@ -78,61 +78,61 @@ LOAD /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
 .hash
  *(.hash)
 
-.gnu.hash       0x00000000000002f0       0x30
+.gnu.hash       0x00000000000002f0       0x34
  *(.gnu.hash)
- .gnu.hash      0x00000000000002f0       0x30 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o
+ .gnu.hash      0x00000000000002f0       0x34 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o
 
-.dynsym         0x0000000000000320      0x108
+.dynsym         0x0000000000000328      0x120
  *(.dynsym)
- .dynsym        0x0000000000000320      0x108 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o
+ .dynsym        0x0000000000000328      0x120 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o
 
-.dynstr         0x0000000000000428       0x8d
+.dynstr         0x0000000000000448       0x95
  *(.dynstr)
- .dynstr        0x0000000000000428       0x8d /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o
+ .dynstr        0x0000000000000448       0x95 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o
 
-.gnu.version    0x00000000000004b6       0x16
+.gnu.version    0x00000000000004de       0x18
  *(.gnu.version)
- .gnu.version   0x00000000000004b6       0x16 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o
+ .gnu.version   0x00000000000004de       0x18 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o
 
-.gnu.version_d  0x00000000000004d0        0x0
+.gnu.version_d  0x00000000000004f8        0x0
  *(.gnu.version_d)
  .gnu.version_d
-                0x00000000000004d0        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o
+                0x00000000000004f8        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o
 
-.gnu.version_r  0x00000000000004d0       0x20
+.gnu.version_r  0x00000000000004f8       0x20
  *(.gnu.version_r)
  .gnu.version_r
-                0x00000000000004d0       0x20 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o
+                0x00000000000004f8       0x20 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o
 
-.rela.dyn       0x00000000000004f0       0xa8
+.rela.dyn       0x0000000000000518       0xa8
  *(.rela.init)
  *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
- .rela.text     0x00000000000004f0        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o
+ .rela.text     0x0000000000000518        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o
  *(.rela.fini)
  *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
  *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
  .rela.data.rel.local
-                0x00000000000004f0       0x18 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o
+                0x0000000000000518       0x18 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o
  *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
  *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
  *(.rela.ctors)
  *(.rela.dtors)
  *(.rela.got)
- .rela.got      0x0000000000000508       0x60 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o
+ .rela.got      0x0000000000000530       0x60 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o
  *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
  *(.rela.ldata .rela.ldata.* .rela.gnu.linkonce.l.*)
  *(.rela.lbss .rela.lbss.* .rela.gnu.linkonce.lb.*)
  *(.rela.lrodata .rela.lrodata.* .rela.gnu.linkonce.lr.*)
  *(.rela.ifunc)
- .rela.ifunc    0x0000000000000568        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o
+ .rela.ifunc    0x0000000000000590        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o
  .rela.fini_array
-                0x0000000000000568       0x18 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o
+                0x0000000000000590       0x18 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o
  .rela.init_array
-                0x0000000000000580       0x18 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o
+                0x00000000000005a8       0x18 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o
 
-.rela.plt       0x0000000000000598       0x48
+.rela.plt       0x00000000000005c0       0x48
  *(.rela.plt)
- .rela.plt      0x0000000000000598       0x48 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o
+ .rela.plt      0x00000000000005c0       0x48 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o
  *(.rela.iplt)
 
 .relr.dyn
@@ -158,7 +158,7 @@ LOAD /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
  *(.plt.sec)
  .plt.sec       0x0000000000001070       0x30 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o
 
-.text           0x00000000000010a0      0x1dd
+.text           0x00000000000010a0      0x1f6
  *(.text.unlikely .text.*_unlikely .text.unlikely.*)
  *(.text.exit .text.exit.*)
  *(.text.startup .text.startup.*)
@@ -167,22 +167,23 @@ LOAD /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
  *(.text .stub .text.* .gnu.linkonce.t.*)
  .text          0x00000000000010a0        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o
  .text          0x00000000000010a0       0xb9 /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o
- .text          0x0000000000001159       0x44 /tmp/ccgEhjZq.o
-                0x0000000000001159                calc
-                0x0000000000001187                inner_calc
- .text          0x000000000000119d       0xe0 /tmp/ccV0bF7Q.o
-                0x000000000000119d                display
-                0x00000000000011f8                peek
-                0x0000000000001263                say_hi
- .text          0x000000000000127d        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o
- .text          0x000000000000127d        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+ .text          0x0000000000001159       0xf9 /tmp/ccdmypx1.o
+                0x0000000000001159                display
+                0x00000000000011b4                somevar
+                0x00000000000011cd                peek
+                0x0000000000001238                say_hi
+ .text          0x0000000000001252       0x44 /tmp/cciOujss.o
+                0x0000000000001252                calc
+                0x0000000000001280                inner_calc
+ .text          0x0000000000001296        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o
+ .text          0x0000000000001296        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
  *(.gnu.warning)
 
-.fini           0x0000000000001280        0xd
+.fini           0x0000000000001298        0xd
  *(SORT_NONE(.fini))
- .fini          0x0000000000001280        0x8 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o
-                0x0000000000001280                _fini
- .fini          0x0000000000001288        0x5 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+ .fini          0x0000000000001298        0x8 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o
+                0x0000000000001298                _fini
+ .fini          0x00000000000012a0        0x5 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
                 [!provide]                        PROVIDE (__etext = .)
                 [!provide]                        PROVIDE (_etext = .)
                 [!provide]                        PROVIDE (etext = .)
@@ -191,29 +192,29 @@ LOAD /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
 
 .rodata         0x0000000000002000       0x61
  *(.rodata .rodata.* .gnu.linkonce.r.*)
- .rodata        0x0000000000002000       0x61 /tmp/ccV0bF7Q.o
+ .rodata        0x0000000000002000       0x61 /tmp/ccdmypx1.o
 
 .rodata1
  *(.rodata1)
 
-.eh_frame_hdr   0x0000000000002064       0x4c
+.eh_frame_hdr   0x0000000000002064       0x54
  *(.eh_frame_hdr)
- .eh_frame_hdr  0x0000000000002064       0x4c /tmp/ccgEhjZq.o
+ .eh_frame_hdr  0x0000000000002064       0x54 /tmp/ccdmypx1.o
                 0x0000000000002064                __GNU_EH_FRAME_HDR
  *(.eh_frame_entry .eh_frame_entry.*)
 
-.eh_frame       0x00000000000020b0      0x114
+.eh_frame       0x00000000000020b8      0x134
  *(.eh_frame)
- .eh_frame      0x00000000000020b0       0x40 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o
- .eh_frame      0x00000000000020f0       0x18 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o
+ .eh_frame      0x00000000000020b8       0x40 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o
+ .eh_frame      0x00000000000020f8       0x18 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o
                                          0x30 (size before relaxing)
- .eh_frame      0x0000000000002108       0x18 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o
+ .eh_frame      0x0000000000002110       0x18 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o
                                          0x30 (size before relaxing)
- .eh_frame      0x0000000000002120       0x40 /tmp/ccgEhjZq.o
+ .eh_frame      0x0000000000002128       0x80 /tmp/ccdmypx1.o
+                                         0x98 (size before relaxing)
+ .eh_frame      0x00000000000021a8       0x40 /tmp/cciOujss.o
                                          0x58 (size before relaxing)
- .eh_frame      0x0000000000002160       0x60 /tmp/ccV0bF7Q.o
-                                         0x78 (size before relaxing)
- .eh_frame      0x00000000000021c0        0x4 /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o
+ .eh_frame      0x00000000000021e8        0x4 /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o
  *(.eh_frame.*)
 
 .gcc_except_table
@@ -298,48 +299,49 @@ LOAD /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
                 0x0000000000004000                _GLOBAL_OFFSET_TABLE_
  *(.igot.plt)
 
-.data           0x0000000000004030       0x24
+.data           0x0000000000004030       0x20
  *(.data .data.* .gnu.linkonce.d.*)
  .data          0x0000000000004030        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o
  .data          0x0000000000004030        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o
  .data.rel.local
                 0x0000000000004030        0x8 /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o
                 0x0000000000004030                __dso_handle
- *fill*         0x0000000000004038        0x8 
- .data          0x0000000000004040       0x10 /tmp/ccgEhjZq.o
+ .data          0x0000000000004038        0x4 /tmp/ccdmypx1.o
+                0x0000000000004038                MYLIB_VERSION
+ *fill*         0x000000000000403c        0x4 
+ .data          0x0000000000004040       0x10 /tmp/cciOujss.o
                 0x0000000000004040                MY_BASE
- .data          0x0000000000004050        0x4 /tmp/ccV0bF7Q.o
-                0x0000000000004050                MYLIB_VERSION
- .data          0x0000000000004054        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o
- .data          0x0000000000004054        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+ .data          0x0000000000004050        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o
+ .data          0x0000000000004050        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
 
 .tm_clone_table
-                0x0000000000004058        0x0
+                0x0000000000004050        0x0
  .tm_clone_table
-                0x0000000000004058        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o
+                0x0000000000004050        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o
  .tm_clone_table
-                0x0000000000004058        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o
+                0x0000000000004050        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o
 
 .data1
  *(.data1)
                 [!provide]                        PROVIDE (_edata = .)
                 [!provide]                        PROVIDE (edata = .)
-                0x0000000000004058                . = .
+                0x0000000000004050                . = .
                 [!provide]                        PROVIDE (__bss_start = .)
 
-.bss            0x0000000000004054        0x4
+.bss            0x0000000000004050        0x8
  *(.dynbss)
- .dynbss        0x0000000000004054        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o
+ .dynbss        0x0000000000004050        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o
  *(.bss .bss.* .gnu.linkonce.b.*)
- .bss           0x0000000000004054        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o
- .bss           0x0000000000004054        0x1 /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o
- .bss           0x0000000000004055        0x0 /tmp/ccgEhjZq.o
- .bss           0x0000000000004055        0x0 /tmp/ccV0bF7Q.o
- .bss           0x0000000000004055        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o
- .bss           0x0000000000004055        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+ .bss           0x0000000000004050        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o
+ .bss           0x0000000000004050        0x1 /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o
+ .bss           0x0000000000004051        0x1 /tmp/ccdmypx1.o
+                0x0000000000004051                MYLIB_SOMEVAR
+ .bss           0x0000000000004052        0x0 /tmp/cciOujss.o
+ .bss           0x0000000000004052        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o
+ .bss           0x0000000000004052        0x0 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
  *(COMMON)
                 0x0000000000004058                . = ALIGN ((. != 0x0)?0x8:0x1)
- *fill*         0x0000000000004055        0x3 
+ *fill*         0x0000000000004052        0x6 
 
 .lbss
  *(.dynlbss)
@@ -381,8 +383,8 @@ LOAD /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
  *(.comment)
  .comment       0x0000000000000000       0x2b /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o
                                          0x2c (size before relaxing)
- .comment       0x000000000000002b       0x2c /tmp/ccgEhjZq.o
- .comment       0x000000000000002b       0x2c /tmp/ccV0bF7Q.o
+ .comment       0x000000000000002b       0x2c /tmp/ccdmypx1.o
+ .comment       0x000000000000002b       0x2c /tmp/cciOujss.o
  .comment       0x000000000000002b       0x2c /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o
 
 .gnu.build.attributes
@@ -403,37 +405,37 @@ LOAD /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
 .debug_aranges  0x0000000000000000       0x60
  *(.debug_aranges)
  .debug_aranges
-                0x0000000000000000       0x30 /tmp/ccgEhjZq.o
+                0x0000000000000000       0x30 /tmp/ccdmypx1.o
  .debug_aranges
-                0x0000000000000030       0x30 /tmp/ccV0bF7Q.o
+                0x0000000000000030       0x30 /tmp/cciOujss.o
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x0000000000000000      0x2ee
+.debug_info     0x0000000000000000      0x334
  *(.debug_info .gnu.linkonce.wi.*)
- .debug_info    0x0000000000000000      0x12d /tmp/ccgEhjZq.o
- .debug_info    0x000000000000012d      0x1c1 /tmp/ccV0bF7Q.o
+ .debug_info    0x0000000000000000      0x207 /tmp/ccdmypx1.o
+ .debug_info    0x0000000000000207      0x12d /tmp/cciOujss.o
 
-.debug_abbrev   0x0000000000000000      0x200
+.debug_abbrev   0x0000000000000000      0x22f
  *(.debug_abbrev)
- .debug_abbrev  0x0000000000000000       0xcc /tmp/ccgEhjZq.o
- .debug_abbrev  0x00000000000000cc      0x134 /tmp/ccV0bF7Q.o
+ .debug_abbrev  0x0000000000000000      0x163 /tmp/ccdmypx1.o
+ .debug_abbrev  0x0000000000000163       0xcc /tmp/cciOujss.o
 
-.debug_line     0x0000000000000000      0x119
+.debug_line     0x0000000000000000      0x123
  *(.debug_line .debug_line.* .debug_line_end)
- .debug_line    0x0000000000000000       0x85 /tmp/ccgEhjZq.o
- .debug_line    0x0000000000000085       0x94 /tmp/ccV0bF7Q.o
+ .debug_line    0x0000000000000000       0x9e /tmp/ccdmypx1.o
+ .debug_line    0x000000000000009e       0x85 /tmp/cciOujss.o
 
 .debug_frame
  *(.debug_frame)
 
-.debug_str      0x0000000000000000      0x185
+.debug_str      0x0000000000000000      0x19b
  *(.debug_str)
- .debug_str     0x0000000000000000      0x135 /tmp/ccgEhjZq.o
+ .debug_str     0x0000000000000000      0x182 /tmp/ccdmypx1.o
+                                        0x1b2 (size before relaxing)
+ .debug_str     0x0000000000000182       0x19 /tmp/cciOujss.o
                                         0x15f (size before relaxing)
- .debug_str     0x0000000000000135       0x50 /tmp/ccV0bF7Q.o
-                                        0x19c (size before relaxing)
 
 .debug_loc
  *(.debug_loc)
@@ -466,11 +468,11 @@ LOAD /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
                 0x0000000000000000       0xc2
  *(.debug_line_str)
  .debug_line_str
-                0x0000000000000000       0xa3 /tmp/ccgEhjZq.o
-                                         0xd4 (size before relaxing)
- .debug_line_str
-                0x00000000000000a3       0x1f /tmp/ccV0bF7Q.o
+                0x0000000000000000       0x82 /tmp/ccdmypx1.o
                                          0xb5 (size before relaxing)
+ .debug_line_str
+                0x0000000000000082       0x40 /tmp/cciOujss.o
+                                         0xd4 (size before relaxing)
 
 .debug_loclists
  *(.debug_loclists)
