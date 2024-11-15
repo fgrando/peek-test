@@ -1,6 +1,6 @@
 
 all:
-	gcc -g -Wall -Werror -fPIC -shared -o libmylib.so -fvisibility=hidden mylib.c calc.c -Xlinker -Map=mylib.map
+	gcc -g -Wall -Werror -fPIC -shared -o libmylib.so -fvisibility=hidden mylib.c calc.c mem.c -Wl,-Map=mylib.map,-T,linker.ld
 	@echo "built!"
 
 	@echo "\n\nexposed functions:"

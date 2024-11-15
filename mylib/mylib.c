@@ -8,31 +8,32 @@ extern tuple_t MY_BASE;
 
 char MYLIB_SOMEVAR;
 
-void display(void)
-{
-    void *ptr = (void*)&MYLIB_VERSION;
-    printf("MYLIB_VERSION           %p\n", ptr);
+static char SOMEBUFFER[500];
 
-    ptr = (void*)&MY_BASE;
-    printf("MY_BASE                 %p\n", ptr);
+void show_vars(void)
+{
+    printf("debug info...\n");
+
+    printf("MYLIB_VERSION           %p\n", &MYLIB_VERSION);
+    printf("MY_BASE                 %p\n", &MY_BASE);
+    printf("SOMEBUFFER              %p\n", &SOMEBUFFER);
+    printf("MYLIB_SOMEVAR           %p\n", &MYLIB_SOMEVAR);
+    printf("__MYLIB_start_data      %p\n", &__MYLIB_start_data);
+    printf("__MYLIB_end_data        %p\n", &__MYLIB_end_data);
+    printf("__MYLIB_start_bss       %p\n", &__MYLIB_start_bss);
+    printf("__MYLIB_end_bss         %p\n", &__MYLIB_end_bss);
 }
 
-uint64_t somevar(void)
+void* translate(uint64_t addr)
 {
-    uint64_t addr = (uint64_t)&MYLIB_SOMEVAR;
-    return addr;
+    uintptr_t local_addr = (addr + (uintptr_t)&__MYLIB_start_data);
+    return (void*)local_addr;
 }
 
 int peek(uint64_t addr, uint32_t *output)
 {
-    display();
-
-    void *ptr = (void*)addr;
-    printf("reading memory at %p...", ptr);
-
-    memcpy(output, ptr, sizeof(*output));
-
-    printf("%x\n", *output);
+    //show_vars();
+    memcpy(output, translate(addr), sizeof(*output));
     return 0; /* always ok */
 }
 
