@@ -7,6 +7,7 @@
 typedef struct tuple_tag
 {
     int first;
+    int pad;
     double second;
 } tuple_t;
 

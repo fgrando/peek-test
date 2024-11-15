@@ -2,7 +2,7 @@
 
 #include "mylib.h"
 
-tuple_t MY_BASE = {10, 3.141592};
+tuple_t MY_BASE = {10, 0, 3.141592};
 
 EXTERN_C DLL_PUBLIC int calc(void)
 {
