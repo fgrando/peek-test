@@ -15,16 +15,44 @@ void display(void)
 
     ptr = (void*)&MY_BASE;
     printf("MY_BASE                 %p\n", ptr);
+
+    ptr = (void*)&MYLIB_SOMEVAR;
+    printf("MYLIB_SOMEVAR           %p\n", ptr);
 }
 
-uint64_t somevar(void)
+uintptr_t somevar(void)
 {
-    uint64_t addr = (uint64_t)&MYLIB_SOMEVAR;
+    uintptr_t addr = (uintptr_t)&MYLIB_SOMEVAR;
     return addr;
 }
 
-int peek(uint64_t addr, uint32_t *output)
+static uint32_t *find_ptr(uintptr_t addr)
 {
+     char *mb = (char *)&MY_BASE;
+     const uintptr_t my_base = (uintptr_t)mb;
+     const uintptr_t my_base_4 = (uintptr_t)(mb + 4);
+     const uintptr_t my_base_8 = (uintptr_t)(mb + 8);
+     const uintptr_t my_base_12 = (uintptr_t)(mb + 12);
+
+     if (addr == my_base)
+         return (uint32_t *)my_base;
+     if (addr == my_base_4)
+         return (uint32_t *)my_base_4;
+     if (addr == my_base_8) {
+         printf("PS: double to int -> 0x%x\n", (*(uint32_t *)my_base_8));
+         return (uint32_t *)my_base_8;
+     }
+     if (addr == my_base_12) {
+         printf("PS: double to int -> 0x%x\n", (*(uint32_t *)my_base_12));
+         return (uint32_t *)my_base_12;
+     }
+
+     return NULL;
+}
+
+int peek(uintptr_t addr, uint32_t *output)
+{
+    uint32_t *exp_ptr = find_ptr(addr);
     display();
 
     void *ptr = (void*)addr;
@@ -33,6 +61,7 @@ int peek(uint64_t addr, uint32_t *output)
     memcpy(output, ptr, sizeof(*output));
 
     printf("%x\n", *output);
+    printf("\texpected: %x\n", exp_ptr != NULL ? *exp_ptr : 0);
     return 0; /* always ok */
 }
 
